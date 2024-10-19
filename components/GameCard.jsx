@@ -9,6 +9,7 @@ import {
 import React, { useEffect, useRef } from "react";
 import { Score } from "./Score";
 import { Link } from "expo-router";
+import Colors from "../constants/Colors";
 
 export function GameCard({ game }) {
   return (
@@ -76,7 +77,7 @@ const styles = StyleSheet.create({
     borderColor: "black",
     marginBottom: 20,
     marginTop: 10,
-    backgroundColor: "#1e1e1e",
+    backgroundColor: Colors.backgroundSecondary,
     borderRadius: 20,
     padding: 10,
   },

@@ -1,16 +1,17 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
+import Colors from "../constants/Colors";
 
 export function Score({ score, maxScore }) {
   const getColors = () => {
     const percentage = (score / maxScore) * 100;
     switch (percentage) {
       case percentage < 40:
-        return "#E22028";
+        return Colors.terciary;
       case percentage > 65:
-        return "#ED3C1F";
+        return Colors.secondary;
       default:
-        return "#E0BB46";
+        return Colors.primary;
     }
   };
 
